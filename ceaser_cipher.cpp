@@ -3,10 +3,10 @@
 //
 // A simple ceaser cipher program that
 // works on alpha-numeric values.
+
 #include <iostream>
 #include <cstring>
 #include <cctype>
-
 
 
 char isUpperAlpha( char letter, int shift_val ) {
@@ -57,10 +57,6 @@ char check_letter(char letter, int shift_val) {
 		
 	// If the character is not alpa-numeric return character
 	return letter;
-
-
-
-	//return (char) ((( ( (int) letter - 97) + 26 + (ciph%26) -1) % 26 + 1) + 97); 
 }
 
 bool is_valid_num(char* input) {
